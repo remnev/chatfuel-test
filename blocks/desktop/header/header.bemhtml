@@ -1,0 +1,5 @@
+block('header').content()([
+    {block: 'logo'},
+    {block: 'main-menu'}
+]);
+

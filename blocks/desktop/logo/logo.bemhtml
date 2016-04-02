@@ -1,0 +1,7 @@
+block('logo').def()(function() {
+    return applyCtx({
+        block: 'link',
+        url: '/',
+        mix: {block: 'logo'}
+    });
+});

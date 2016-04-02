@@ -1,0 +1,7 @@
+block('main-menu').elem('item').content()(function() {
+    return {
+        block: 'link',
+        url: '/' + this.ctx.slug,
+        content: this.ctx.content
+    }
+});

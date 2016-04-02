@@ -1,0 +1,28 @@
+block('main-menu').content()([
+    {
+        elem: 'item',
+        content: 'overview',
+        slug: 'overview'
+    },
+    {
+        elem: 'item',
+        content: 'blog',
+        slug: 'blog'
+    },
+    {
+        elem: 'item',
+        content: 'community',
+        slug: 'community'
+    },
+    {
+        elem: 'item',
+        content: 'for publishers',
+        slug: 'for-publishers'
+    },
+    {
+        elem: 'item',
+        mods: {active: true},
+        content: 'dashboard',
+        slug: 'dashboard'
+    }
+]);

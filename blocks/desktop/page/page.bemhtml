@@ -19,7 +19,10 @@ block('page').def()(function () {
             elem: 'js',
             url: 'bundles/index/index.min.js'
         },
-        content: {block: 'content'}
+        content: [
+            {block: 'header'},
+            {block: 'content'}
+        ]
     });
 
     return applyNext();
