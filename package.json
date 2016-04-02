@@ -1,0 +1,28 @@
+{
+  "author": "Yuriy Remnev <yura_remnev@mail.ru>",
+  "name": "chatfuel-test",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remnev/chatfuel-test.git"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "devDependencies": {
+    "borschik-tech-cleancss": "^2.1.0",
+    "bower": "^1.7.7",
+    "enb": "^1.1.2",
+    "enb-bem-techs": "^2.2.1",
+    "enb-bemxjst": "^4.1.0",
+    "enb-borschik": "^2.3.0",
+    "enb-js": "^1.1.0",
+    "enb-stylus": "^2.2.0"
+  },
+  "scripts": {
+    "postinstall": "npm run deps",
+    "deps": "bower i --allow-root",
+    "build": "enb make"
+  },
+  "private": true
+}

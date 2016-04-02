@@ -1,0 +1,6 @@
+libs/
+node_modules/
+npm-debug.log
+.enb/tmp/
+bundles/*/*
+!bundles/*/*.bemjson.js

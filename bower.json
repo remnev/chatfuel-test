@@ -1,0 +1,7 @@
+{
+  "name": "chatfuel-test",
+  "private": true,
+  "dependencies": {
+    "bem-components": "2.5.0"
+  }
+}
