@@ -1,10 +1,4 @@
-block('content')(
-
-    content()([
-        'Page content'
-    ]),
-
-    js()(true)
-
-);
+block('content').content()([
+    {block: 'bot-pane'}
+]);
 

@@ -1,0 +1,22 @@
+block('bot-menu').content()({
+    block: 'menu',
+    mods: {mode: 'radio'},
+    val: 'ai-setup',
+    content: [
+        {
+            block: 'menu-item',
+            val: 'broadcasting',
+            content : 'Broadcasting'
+        },
+        {
+            block: 'menu-item',
+            val: 'structure',
+            content: 'Structure'
+        },
+        {
+            block: 'menu-item',
+            val: 'ai-setup',
+            content: 'AI setup'
+        }
+    ]
+});

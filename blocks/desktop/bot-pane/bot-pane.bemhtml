@@ -1,0 +1,7 @@
+block('bot-pane').content()({
+    elem: 'inner',
+    content: [
+        {block: 'bot-selector'},
+        {block: 'bot-menu'}
+    ]
+});
