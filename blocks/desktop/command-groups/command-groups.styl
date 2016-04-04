@@ -1,0 +1,25 @@
+.command-groups
+    background-color: #f3f2f2
+    padding: 28px 7px
+    width: 392px
+
+    &__add-group
+        font-family: Arial, sans-serif
+        width: 100%
+        line-height: 40px
+        border: none
+        border-radius: 3px
+        background-color: #fff
+        font-size: 14px
+        outline: none
+        cursor: pointer
+
+        &.button_pressed
+            box-shadow: 0 0 1px #d9d9d9
+
+        .button__text::before
+            content: '+'
+            color: #cbcbcb
+            margin-right: 6px
+            font-size: 20px
+            vertical-align: middle

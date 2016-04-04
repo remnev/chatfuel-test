@@ -1,0 +1,41 @@
+block('command-group')(
+    js()(true),
+
+    content()(function() {
+        var commandsBemjson = this.ctx.commands.map(function(command) {
+            return {
+                elem: 'command',
+                content: command
+            };
+        });
+
+        commandsBemjson.push({
+            elem: 'command',
+            mods: {'add-command': true},
+            content: '+'
+        });
+
+        return [
+            {
+                elem: 'title',
+                content: this.ctx.title
+            },
+            {
+                block: 'input',
+                mix: {
+                    block: 'command-group',
+                    elem: 'input'
+                }
+            },
+            {
+                elem: 'edit',
+                tag: 'span',
+                cls: 'fa fa-pencil fa-fw'
+            },
+            {
+                elem: 'inner',
+                content: commandsBemjson
+            }
+        ];
+    })
+);

@@ -1,0 +1,29 @@
+block('command-groups')(
+    js()(true),
+
+    content()([
+        {
+            elem: 'inner',
+            content: [
+                {
+                    block: 'command-group',
+                    title: 'Intro',
+                    commands: ['#onboarding', '#help']
+                },
+                {
+                    block: 'command-group',
+                    title: 'Main menu',
+                    commands: ['#bluetoth', '#cordmouse', '#gamemouse', '#sensorpanel', '#trackbol', '#pointdevices']
+                },
+            ]
+        },
+        {
+            block: 'button',
+            mix: {
+                block: 'command-groups',
+                elem: 'add-group'
+            },
+            text: 'Add group'
+        }
+    ])
+);

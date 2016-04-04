@@ -1,5 +1,6 @@
 ({
     mustDeps: [
-        {block: 'bot-pane'}
+        {block: 'bot-pane'},
+        {block: 'command-groups'}
     ]
 });

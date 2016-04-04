@@ -11,10 +11,16 @@ block('page').def()(function () {
                 }
             }
         ],
-        styles: {
-            elem : 'css',
-            url : 'bundles/index/index.min.css'
-        },
+        styles: [
+            {
+                elem: 'css',
+                url: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'
+            },
+            {
+                elem: 'css',
+                url: 'bundles/index/index.min.css'
+            }
+        ],
         scripts: {
             elem: 'js',
             url: 'bundles/index/index.min.js'

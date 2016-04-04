@@ -1,0 +1,71 @@
+.command-group
+    margin-bottom: 36px
+    position: relative
+
+    &__title
+        color: #797878
+        font-weight: bold
+        font-size: 14px
+        font-family: Arial, sans-serif
+        padding-left: 15px
+        display: inline-block
+
+    &__edit
+        float: right
+        color: #a9a8a8
+        font-size: 13px
+        cursor: pointer
+
+    &__inner
+        margin-top: 10px
+        padding: 6px
+        border-radius: 3px
+        background-color: #fff
+        line-height: 0
+
+    &__command
+        display: inline-block
+        font-size: 12px
+        font-family: Arial, sans-serif
+        color: #000
+        text-align: center
+        padding: 0 8px
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+        margin: 2px
+        background-color: #f7f7f7
+        border-radius: 3px
+        line-height: 32px
+        width: 75px
+        cursor: pointer
+        user-select: none
+
+        &:active
+            box-shadow: 0 0 1px #d9d9d9
+
+        &_add-command
+            color: #c4c4c4
+            font-size: 20px
+
+    &__input
+        position: absolute
+        top: -4px
+        left: 9px
+        right: 0
+        display: none
+
+        &_visible
+            display: block
+
+        .input__control
+            border-radius: 3px
+            border: 1px solid #d9d9d9
+            padding: 4px 5px
+            outline: none
+            color: #797878
+            font-family: Arial, sans-serif
+            font-weight: bold
+            font-size: 14px
+            width: 100%
+            box-sizing: border-box
