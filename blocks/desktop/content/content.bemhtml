@@ -1,8 +1,10 @@
 block('content').content()([
     {block: 'bot-pane'},
     {
+        elem: 'workspace',
         content: [
-            {block: 'command-groups'}
+            {block: 'command-groups'},
+            {block: 'command-editor'}
         ]
     }
 ]);

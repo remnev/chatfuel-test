@@ -1,0 +1,5 @@
+block('command-editor')(
+    js()(true),
+
+    content()({elem: 'inner'})
+);
