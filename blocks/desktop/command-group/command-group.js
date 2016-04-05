@@ -10,8 +10,19 @@ function (provide, BEMDOM, BEMHTML) {
 
                     this.bindTo('edit', 'click', this._onEditClick);
                     this.bindTo('input', 'keyup', this._onInputKeyup);
+                    this.bindTo(this.elem('command', 'add-command'), 'click', this._onAddCommandClick);
                 }
             }
+        },
+
+        _onAddCommandClick: function (e) {
+            var commandHtml = BEMHTML.apply({
+                block: 'command-group',
+                elem: 'command',
+                content: 'New command'
+            });
+
+            BEMDOM.before(e.currentTarget, commandHtml);
         },
 
         _onEditClick: function () {
