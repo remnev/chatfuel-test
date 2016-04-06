@@ -22,6 +22,7 @@ var techs = {
         { path: 'libs/bem-core/desktop.blocks', check: false },
         { path: 'libs/bem-components/common.blocks', check: false },
         { path: 'libs/bem-components/desktop.blocks', check: false },
+        { path: 'libs/bem-factory/common.blocks', check: false },
         'blocks/desktop'
     ];
 

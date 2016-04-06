@@ -5,6 +5,9 @@
             block: 'events',
             elem: 'channels'
         },
-        {block: 'jquery'}
+        {
+            block: 'jquery',
+            elem: 'ui'
+        }
     ]
 });

@@ -1,12 +1,18 @@
 modules.define('command-group',
-['i-bem__dom', 'BEMHTML', 'events__channels', 'jquery'],
-function (provide, BEMDOM, BEMHTML, channels, $) {
+['i-bem__dom', 'BEMHTML', 'events__channels', 'jquery', 'jquery__ui'],
+function (provide, BEMDOM, BEMHTML, channels, $, ui) {
 
     provide(BEMDOM.decl(this.name, {
         onSetMod: {
             js: {
                 inited: function () {
                     this._inputBlock = this.findBlockOn('input', 'input');
+
+                    this.elem('inner').sortable({
+                        cancel: '.command-group__command_add-command',
+                        cursor: 'move',
+                        stop: this._onSortableStop.bind(this)
+                    });
 
                     this.bindTo('edit', 'click', this._onEditClick);
                     this.bindTo('input', 'keyup', this._onInputKeyup);
@@ -26,6 +32,17 @@ function (provide, BEMDOM, BEMHTML, channels, $) {
                         });
                     }
                 }
+            }
+        },
+
+        _onSortableStop: function () {
+            var addCommand = this.elem('command', 'add-command');
+            var commandsLength = this.findElem('command').length;
+
+            if (addCommand.index() !== commandsLength - 1) {
+                // move the add-command button to the end of the set
+                // the button must be at the last position
+                this.elem('inner').append(addCommand);
             }
         },
 

@@ -2,6 +2,7 @@
   "name": "chatfuel-test",
   "private": true,
   "dependencies": {
-    "bem-components": "2.5.0"
+    "bem-components": "2.5.0",
+    "bem-factory": "https://github.com/remnev/bem-factory.git#jquery-ui-fix"
   }
 }
