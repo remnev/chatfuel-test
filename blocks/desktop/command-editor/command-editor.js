@@ -31,11 +31,23 @@ function (provide, BEMDOM, BEMHTML, channels) {
             BEMDOM.replace(this.findElem('inner'), innerHtml);
 
             this.setMod('visible');
+        },
+
+        _onCardActionClick: function () {
+            var cardHtml = BEMHTML.apply({
+                block: 'action-card'
+            });
+
+            BEMDOM.after(this.findElem('title'), cardHtml);
         }
     }, {
         live: function () {
             this.liveBindTo('close', 'click', function () {
                 this._onClose();
+            });
+
+            this.liveBindTo('card-action', 'click', function () {
+                this._onCardActionClick();
             });
 
             return false;

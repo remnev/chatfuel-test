@@ -16,7 +16,8 @@
             }
         ],
         shouldDeps: [
-            {elem: 'inner'}
+            {elem: 'inner'},
+            {block: 'action-card'}
         ]
     }
 ]);

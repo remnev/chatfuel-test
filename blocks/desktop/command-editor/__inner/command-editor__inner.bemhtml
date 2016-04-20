@@ -6,11 +6,32 @@ block('command-editor').elem('inner').content()(function() {
         },
         {
             elem: 'card',
-            content: {
-                elem: 'close',
-                tag: 'span',
-                cls: 'fa fa-times fa-fw'
-            }
+            content: [
+                {
+                    elem: 'close',
+                    tag: 'span',
+                    cls: 'fa fa-times fa-fw'
+                },
+                {
+                    elem: 'card-title',
+                    content: 'Add a card'
+                },
+                {
+                    elem: 'card-actions',
+                    content: [
+                        {
+                            elem: 'card-action',
+                            attrs: {'data-action': 'text'},
+                            content: 'Text card'
+                        },
+                        {
+                            elem: 'card-action',
+                            attrs: {'data-action': 'image'},
+                            content: 'Image card'
+                        }
+                    ]
+                }
+            ]
         }
     ];
 });
